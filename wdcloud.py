@@ -75,12 +75,8 @@ for key,value in list_terms.items():
         color = 'rgba(250, 238, 127,0.65)'
     else:
         color = 'rgba(255, 247, 156,0.6)'
-    if i < 20:
-        nodes.append({"id": key, "group": group, "times": value, "color": color })
-        links.append({"source": keyword, "target": key, "value": group})
-    else:
-        break
-    i=i+1
+    nodes.append({"id": key, "group": group, "times": value, "color": color })
+    links.append({"source": keyword, "target": key, "value": group})
 sortna = sorted(nodes, key=lambda k: k['times'], reverse=True)
 sortga = sorted(links, key=lambda k: k['value'], reverse=True)
 json_data = {"nodes": sortna, "links": sortga}
