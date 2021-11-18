@@ -11,7 +11,7 @@ from PIL import Image
 import jieba
 import numpy as np
 from collections import Counter
-file = open("hateee.json",'r',encoding='utf-8')
+file = open("HatePolitics.json",'r',encoding='utf-8')
 papers = " "
 ###U have to follow the step to open the distinct file
 ###def wdcloud(file):
@@ -43,7 +43,7 @@ sorted(Counter(terms).items(), key=lambda x:x[1], reverse=True)
 list_terms=Counter(terms)
 
 keyword = "政治"
-f=open("ccount.json","w",encoding="utf-8")
+f=open("temp.json","w",encoding="utf-8")
 nodes=list()
 links=list()
 i=0
@@ -75,8 +75,12 @@ for key,value in list_terms.items():
         color = 'rgba(250, 238, 127,0.65)'
     else:
         color = 'rgba(255, 247, 156,0.6)'
-    nodes.append({"id": key, "group": group, "times": value, "color": color })
-    links.append({"source": keyword, "target": key, "value": group})
+    if i < 20:
+        nodes.append({"id": key, "group": group, "times": value, "color": color })
+        links.append({"source": keyword, "target": key, "value": group})
+    else:
+        break
+    i=i+1
 sortna = sorted(nodes, key=lambda k: k['times'], reverse=True)
 sortga = sorted(links, key=lambda k: k['value'], reverse=True)
 json_data = {"nodes": sortna, "links": sortga}

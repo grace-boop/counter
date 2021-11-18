@@ -1,0 +1,226 @@
+{
+    "nodes": [
+        {
+            "id": "台",
+            "group": 25,
+            "times": 15313,
+            "color": "rgba(255, 153, 51,1.0)"
+        },
+        {
+            "id": "中國",
+            "group": 25,
+            "times": 9810,
+            "color": "rgba(255, 153, 51,1.0)"
+        },
+        {
+            "id": "說",
+            "group": 25,
+            "times": 7195,
+            "color": "rgba(255, 153, 51,1.0)"
+        },
+        {
+            "id": "沒",
+            "group": 25,
+            "times": 6574,
+            "color": "rgba(255, 153, 51,1.0)"
+        },
+        {
+            "id": "問",
+            "group": 25,
+            "times": 1326,
+            "color": "rgba(255, 153, 51,1.0)"
+        },
+        {
+            "id": "愛",
+            "group": 25,
+            "times": 1296,
+            "color": "rgba(255, 153, 51,1.0)"
+        },
+        {
+            "id": "清楚",
+            "group": 25,
+            "times": 1192,
+            "color": "rgba(255, 153, 51,1.0)"
+        },
+        {
+            "id": "點",
+            "group": 15,
+            "times": 725,
+            "color": "rgba(252, 218, 68,0.75)"
+        },
+        {
+            "id": "認真",
+            "group": 15,
+            "times": 711,
+            "color": "rgba(252, 218, 68,0.75)"
+        },
+        {
+            "id": "造成",
+            "group": 15,
+            "times": 569,
+            "color": "rgba(252, 218, 68,0.75)"
+        },
+        {
+            "id": "海",
+            "group": 10,
+            "times": 286,
+            "color": "rgba(247, 229, 106,0.7)"
+        },
+        {
+            "id": "複雜",
+            "group": 10,
+            "times": 279,
+            "color": "rgba(247, 229, 106,0.7)"
+        },
+        {
+            "id": "同意",
+            "group": 10,
+            "times": 271,
+            "color": "rgba(247, 229, 106,0.7)"
+        },
+        {
+            "id": "情勢",
+            "group": 5,
+            "times": 164,
+            "color": "rgba(250, 238, 127,0.65)"
+        },
+        {
+            "id": "嚴峻",
+            "group": 5,
+            "times": 162,
+            "color": "rgba(250, 238, 127,0.65)"
+        },
+        {
+            "id": "貿易",
+            "group": 5,
+            "times": 156,
+            "color": "rgba(250, 238, 127,0.65)"
+        },
+        {
+            "id": "要死",
+            "group": 1,
+            "times": 66,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "矛盾",
+            "group": 1,
+            "times": 52,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "依存",
+            "group": 1,
+            "times": 29,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "依存度",
+            "group": 1,
+            "times": 20,
+            "color": "rgba(255, 247, 156,0.6)"
+        }
+    ],
+    "links": [
+        {
+            "source": "政治",
+            "target": "台",
+            "value": 25
+        },
+        {
+            "source": "政治",
+            "target": "問",
+            "value": 25
+        },
+        {
+            "source": "政治",
+            "target": "沒",
+            "value": 25
+        },
+        {
+            "source": "政治",
+            "target": "說",
+            "value": 25
+        },
+        {
+            "source": "政治",
+            "target": "清楚",
+            "value": 25
+        },
+        {
+            "source": "政治",
+            "target": "愛",
+            "value": 25
+        },
+        {
+            "source": "政治",
+            "target": "中國",
+            "value": 25
+        },
+        {
+            "source": "政治",
+            "target": "造成",
+            "value": 15
+        },
+        {
+            "source": "政治",
+            "target": "認真",
+            "value": 15
+        },
+        {
+            "source": "政治",
+            "target": "點",
+            "value": 15
+        },
+        {
+            "source": "政治",
+            "target": "海",
+            "value": 10
+        },
+        {
+            "source": "政治",
+            "target": "複雜",
+            "value": 10
+        },
+        {
+            "source": "政治",
+            "target": "同意",
+            "value": 10
+        },
+        {
+            "source": "政治",
+            "target": "情勢",
+            "value": 5
+        },
+        {
+            "source": "政治",
+            "target": "嚴峻",
+            "value": 5
+        },
+        {
+            "source": "政治",
+            "target": "貿易",
+            "value": 5
+        },
+        {
+            "source": "政治",
+            "target": "矛盾",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "要死",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "依存",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "依存度",
+            "value": 1
+        }
+    ]
+}
