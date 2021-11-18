@@ -5,6 +5,7 @@
 
 import json
 import matplotlib.pyplot as plt
+import jieba.posseg as pseg 
 from wordcloud import WordCloud
 #from udicOpenData.dictionary import *##助教給的dictionary,後來沒用因為很醜
 from PIL import Image
@@ -38,7 +39,8 @@ jieba.add_word('塔綠班')                            ####要自己多增加常
 with open('stops.txt', 'r', encoding='utf8') as f:  ####中文的停用字，我也忘記從哪裡拿到的，效果還可以，繁體字的資源真的比較少，大家將就一下吧
     stops = f.read().split('\n') 
 stops.extend(['Re','討論','「','的','民黨','會','都',' ','\n'])
-terms = [t for t in jieba.cut(papers, cut_all=True) if t not in stops]
+terms = [t for t in jieba.pseg.cut(papers,cut_all=False) if t not in stops]
+print(terms)
 sorted(Counter(terms).items(), key=lambda x:x[1], reverse=True)
 list_terms=Counter(terms)
 
@@ -51,13 +53,13 @@ for key,value in list_terms.items():
     #print(key)
     #print(value)
     if value > 1000: 
-        group = 25
-    elif value > 750:
-        group = 20
-    elif value > 500:
         group = 15
-    elif value > 250:
+    elif value > 750:
+        group = 12
+    elif value > 500:
         group = 10
+    elif value > 250:
+        group = 7
     elif value > 100:
         group = 5
     else:
