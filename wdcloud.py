@@ -11,7 +11,7 @@ from PIL import Image
 import jieba
 import numpy as np
 from collections import Counter
-file = open("HatePolitics.json",'r',encoding='utf-8')
+file = open("hateee.json",'r',encoding='utf-8')
 papers = " "
 ###U have to follow the step to open the distinct file
 ###def wdcloud(file):
