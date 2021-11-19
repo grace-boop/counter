@@ -53,13 +53,13 @@ for key,value in list_terms.items():
     #print(key)
     #print(value)
     if value > 1000: 
-        group = 15
+        group = 25
     elif value > 750:
-        group = 12
+        group = 20
     elif value > 500:
-        group = 10
+        group = 15
     elif value > 250:
-        group = 7
+        group = 10
     elif value > 100:
         group = 5
     else:
