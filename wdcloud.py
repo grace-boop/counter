@@ -10,9 +10,10 @@ from wordcloud import WordCloud
 #from udicOpenData.dictionary import *##助教給的dictionary,後來沒用因為很醜
 from PIL import Image
 import jieba
+import jieba.posseg as pseg
 import numpy as np
 from collections import Counter
-file = open("HatePolitics.json",'r',encoding='utf-8')
+file = open("hateee.json",'r',encoding='utf-8')
 papers = " "
 ###U have to follow the step to open the distinct file
 ###def wdcloud(file):
@@ -25,22 +26,28 @@ for line in file.readlines():
 #dump2es.py jieba
 jieba.set_dictionary('2021-10-12 dict.txt.big.txt')
 #print("lalala")
-jieba.add_word('柯文哲')
-jieba.add_word('陳時中')
-jieba.add_word('張亞中')
-jieba.add_word('朱立倫')
-jieba.add_word('國民黨')
-jieba.add_word('民眾黨')
-jieba.add_word('民進黨')
-jieba.add_word('台灣')
-jieba.add_word('高端')
-jieba.add_word('塔綠班')                            ####要自己多增加常用字，這個是for 政黑板
+jieba.add_word('柯文哲 99 n')
+jieba.add_word('陳時中 99 n')
+jieba.add_word('張亞中 99 n')
+jieba.add_word('朱立倫 99 n')
+jieba.add_word('國民黨 99 n')
+jieba.add_word('民眾黨 99 n')
+jieba.add_word('民進黨 99 n')
+jieba.add_word('台灣 99 n')
+jieba.add_word('高端 99 n')
+jieba.add_word('塔綠班 99 n')                            ####要自己多增加常用字，這個是for 政黑板
 
 with open('stops.txt', 'r', encoding='utf8') as f:  ####中文的停用字，我也忘記從哪裡拿到的，效果還可以，繁體字的資源真的比較少，大家將就一下吧
     stops = f.read().split('\n') 
 stops.extend(['Re','討論','「','的','民黨','會','都',' ','\n'])
-terms = [t for t in jieba.pseg.cut(papers,cut_all=False) if t not in stops]
-print(terms)
+term1s = [t for t in pseg.cut(papers) if t not in stops]
+#terms = [t for t in jieba.cut(papers) if t not in stops]
+#print(type(terms))
+terms=[]
+for term1 in term1s:
+    if term1.flag in ["n","nr"]:
+        terms.append(term1.word)
+#print(terms)
 sorted(Counter(terms).items(), key=lambda x:x[1], reverse=True)
 list_terms=Counter(terms)
 

@@ -1,127 +1,121 @@
 {
     "nodes": [
         {
-            "id": "政治",
-            "group": 15,
-            "times": 1000,
-            "color": "rgba(255, 153, 51,1.0)"
-        }
-        {
-            "id": "中國",
-            "group": 15,
-            "times": 9765,
-            "color": "rgba(255, 153, 51,1.0)"
-        },
-        {
-            "id": "說",
-            "group": 15,
-            "times": 6530,
-            "color": "rgba(255, 153, 51,1.0)"
-        },
-        {
-            "id": "沒",
-            "group": 15,
-            "times": 6388,
-            "color": "rgba(255, 153, 51,1.0)"
-        },
-        {
-            "id": "清楚",
-            "group": 15,
-            "times": 1191,
-            "color": "rgba(255, 153, 51,1.0)"
-        },
-        {
-            "id": "愛",
-            "group": 12,
-            "times": 884,
-            "color": "rgba(252, 197, 68,0.85)"
-        },
-        {
-            "id": "認真",
-            "group": 10,
-            "times": 711,
-            "color": "rgba(252, 218, 68,0.75)"
-        },
-        {
-            "id": "問",
-            "group": 10,
-            "times": 624,
-            "color": "rgba(252, 218, 68,0.75)"
-        },
-        {
-            "id": "造成",
-            "group": 10,
-            "times": 562,
-            "color": "rgba(252, 218, 68,0.75)"
-        },
-        {
-            "id": "複雜",
-            "group": 7,
-            "times": 279,
-            "color": "rgba(247, 229, 106,0.7)"
-        },
-        {
-            "id": "同意",
-            "group": 7,
-            "times": 257,
-            "color": "rgba(247, 229, 106,0.7)"
-        },
-        {
-            "id": "台海",
-            "group": 5,
-            "times": 188,
-            "color": "rgba(250, 238, 127,0.65)"
-        },
-        {
-            "id": "情勢",
-            "group": 5,
-            "times": 164,
-            "color": "rgba(250, 238, 127,0.65)"
-        },
-        {
-            "id": "嚴峻",
-            "group": 5,
-            "times": 162,
-            "color": "rgba(250, 238, 127,0.65)"
-        },
-        {
-            "id": "貿易",
-            "group": 5,
-            "times": 156,
-            "color": "rgba(250, 238, 127,0.65)"
-        },
-        {
-            "id": "要死",
+            "id": "人",
             "group": 1,
-            "times": 61,
+            "times": 40,
             "color": "rgba(255, 247, 156,0.6)"
         },
         {
-            "id": "愛的",
+            "id": "大家",
             "group": 1,
-            "times": 58,
+            "times": 5,
             "color": "rgba(255, 247, 156,0.6)"
         },
         {
-            "id": "矛盾",
+            "id": "字",
             "group": 1,
-            "times": 52,
+            "times": 3,
             "color": "rgba(255, 247, 156,0.6)"
         },
         {
-            "id": "依存",
+            "id": "同胞",
             "group": 1,
-            "times": 29,
+            "times": 3,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "朱",
+            "group": 1,
+            "times": 3,
             "color": "rgba(255, 247, 156,0.6)"
         },
         {
             "id": "依存度",
             "group": 1,
-            "times": 20,
+            "times": 2,
             "color": "rgba(255, 247, 156,0.6)"
         },
         {
-            "id": "點你",
+            "id": "措施",
+            "group": 1,
+            "times": 2,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "制裁",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "形容",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "愛",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "水果",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "事件",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "蟲",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "怪人",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "陸客",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "用力",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "鐵劍",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "全家",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "幻想",
+            "group": 1,
+            "times": 1,
+            "color": "rgba(255, 247, 156,0.6)"
+        },
+        {
+            "id": "友台",
             "group": 1,
             "times": 1,
             "color": "rgba(255, 247, 156,0.6)"
@@ -130,102 +124,102 @@
     "links": [
         {
             "source": "政治",
-            "target": "沒",
-            "value": 15
+            "target": "依存度",
+            "value": 1
         },
         {
             "source": "政治",
-            "target": "說",
-            "value": 15
+            "target": "制裁",
+            "value": 1
         },
         {
             "source": "政治",
-            "target": "清楚",
-            "value": 15
+            "target": "字",
+            "value": 1
         },
         {
             "source": "政治",
-            "target": "中國",
-            "value": 15
+            "target": "形容",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "同胞",
+            "value": 1
         },
         {
             "source": "政治",
             "target": "愛",
-            "value": 12
-        },
-        {
-            "source": "政治",
-            "target": "造成",
-            "value": 10
-        },
-        {
-            "source": "政治",
-            "target": "認真",
-            "value": 10
-        },
-        {
-            "source": "政治",
-            "target": "問",
-            "value": 10
-        },
-        {
-            "source": "政治",
-            "target": "複雜",
-            "value": 7
-        },
-        {
-            "source": "政治",
-            "target": "同意",
-            "value": 7
-        },
-        {
-            "source": "政治",
-            "target": "台海",
-            "value": 5
-        },
-        {
-            "source": "政治",
-            "target": "情勢",
-            "value": 5
-        },
-        {
-            "source": "政治",
-            "target": "嚴峻",
-            "value": 5
-        },
-        {
-            "source": "政治",
-            "target": "貿易",
-            "value": 5
-        },
-        {
-            "source": "政治",
-            "target": "矛盾",
             "value": 1
         },
         {
             "source": "政治",
-            "target": "點你",
+            "target": "水果",
             "value": 1
         },
         {
             "source": "政治",
-            "target": "愛的",
+            "target": "事件",
             "value": 1
         },
         {
             "source": "政治",
-            "target": "要死",
+            "target": "蟲",
             "value": 1
         },
         {
             "source": "政治",
-            "target": "依存",
+            "target": "大家",
             "value": 1
         },
         {
             "source": "政治",
-            "target": "依存度",
+            "target": "怪人",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "朱",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "陸客",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "用力",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "鐵劍",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "全家",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "幻想",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "友台",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "措施",
+            "value": 1
+        },
+        {
+            "source": "政治",
+            "target": "人",
             "value": 1
         }
     ]
