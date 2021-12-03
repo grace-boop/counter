@@ -13,17 +13,37 @@ import jieba
 import jieba.posseg as pseg
 import numpy as np
 from collections import Counter
-file = open("hateee.json",'r',encoding='utf-8')
+import time
+now = int(time.time())                    ###current time stamp, precision to second
+early = now - 1000000                      ###one day ago
+str_now=str(now)                          ###轉成str
+str_early=str(early)
+print(str_early)
+print(str_now)
+struct_time = time.localtime(now) # 轉成時間元組
+timeString = time.strftime("%Y-%m-%d", struct_time)
+search_word="政治"
+import requests
+r = requests.get("https://ptt.nlpnchu.org/api/GetByContent?content="+search_word+"&start="+str_early+"&end="+str_now,verify=False)
+list_of_dicts = r.json()
+len = list_of_dicts['total']['value']
+num=int(len/30)+1
+remainder=len%30
+print(remainder)
+print(num)
+print(len)
 papers = " "
-###U have to follow the step to open the distinct file
-###def wdcloud(file):
-#print("lalala")
-for line in file.readlines():
-    dic=json.loads(line)
-    article_title=dic['_source']['article_title']
-    content=dic['_source']['content']
-    papers=papers+article_title+content
-#dump2es.py jieba
+for j in range(num):
+    strj=str(j)
+    r = requests.get("https://ptt.nlpnchu.org/api/GetByContent?content="+search_word+"&start="+str_early+"&end="+str_now+"&size=30&from="+strj,verify=False)
+    list_of_dicts = r.json()
+    for i in range(30):
+        if j == num-1 and i >= remainder:
+            break
+        dict1=list_of_dicts["hits"][i]
+        article_title=dict1['_source']['article_title']
+        content=dict1['_source']['content']
+        papers=papers+article_title+content
 jieba.set_dictionary('2021-10-12 dict.txt.big.txt')
 #print("lalala")
 jieba.add_word('柯文哲 99 n')
@@ -39,7 +59,7 @@ jieba.add_word('塔綠班 99 n')                            ####要自己多增�
 
 with open('stops.txt', 'r', encoding='utf8') as f:  ####中文的停用字，我也忘記從哪裡拿到的，效果還可以，繁體字的資源真的比較少，大家將就一下吧
     stops = f.read().split('\n') 
-stops.extend(['Re','討論','「','的','民黨','會','都',' ','\n'])
+stops.extend(['Re','討論','的','民黨','會','都','人'])
 term1s = [t for t in pseg.cut(papers) if t not in stops]
 #terms = [t for t in jieba.cut(papers) if t not in stops]
 #print(type(terms))
